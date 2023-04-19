@@ -1,0 +1,111 @@
+In Java, a compilation error (also known as a compile-time error or syntax error) occurs when the Java compiler is unable to compile your code due to syntax errors, type mismatches, or other issues.
+
+Compilation errors occur during the compilation process and prevent your code from being converted into executable code. These errors must be fixed before the program can be run.
+
+Some common examples of compilation errors in Java include:
+
+Missing semicolons at the end of statements
+Using undeclared variables or methods
+Incorrect syntax such as using parentheses incorrectly or placing a curly brace in the wrong place
+Mismatched types, such as trying to assign an integer to a string variable
+When a compilation error occurs, the Java compiler will typically display an error message indicating the line number and specific issue that caused the error. This message can be used to debug the code and correct the errors.
+
+------------------------------------------
+Error symbol: class Setter
+The error "symbol: class Setter" in Java usually occurs when you are trying to use a setter method but the corresponding class or library that contains the setter method is not imported or is not available in the current scope.
+
+A setter method is a method used to set the value of a private field in a class. It is usually defined in the same class as the field it sets. For example, if you have a private field called "name" in a class, you might have a setter method called setName(String name) that sets the value of the name field.
+
+To resolve the error, you should make sure that the class or library that contains the setter method is properly imported at the beginning of your Java file.
+
+If the setter method is defined in the same class where you are trying to use it, make sure that the method is defined correctly and that there are no syntax errors in the method signature or body.
+
+If you are still unable to resolve the error, you may need to provide more information about your code and the specific error message you are receiving in order to receive more specific help.
+
+
+
+
+----------------------------------------------------------------------
+error: package lombok does noot exist
+The error "package lombok does not exist" in Java usually occurs when the Lombok library is not properly installed or configured in your Java development environment.
+
+Lombok is a Java library that provides features to reduce boilerplate code such as getters, setters, and constructors. To use Lombok in your Java project, you need to add the Lombok dependency to your project and configure your IDE to recognize Lombok annotations.
+
+To resolve this error, you can follow these steps:
+
+Make sure that you have added the Lombok dependency to your project. You can do this by adding the following lines to your Maven or Gradle build file:
+
+Maven:
+
+<dependency>
+   <groupId>org.projectlombok</groupId>
+   <artifactId>lombok</artifactId>
+   <version>1.18.20</version>
+   <scope>provided</scope>
+</dependency>
+
+
+Gradle:
+implementation 'org.projectlombok:lombok:1.18.20'
+If you are using an IDE such as Eclipse or IntelliJ IDEA, you need to install the Lombok plugin and enable annotation processing. In Eclipse, you can install the Lombok plugin by going to Help > Eclipse Marketplace and searching for "lombok". In IntelliJ IDEA, you can install the Lombok plugin by going to File > Settings > Plugins and searching for "lombok". After installing the plugin, you need to enable annotation processing by going to File > Settings > Build, Execution, Deployment > Compiler > Annotation Processors and checking the "Enable annotation processing" checkbox.
+
+After adding the Lombok dependency and configuring your IDE, you should rebuild your project and try again.
+
+If you are still unable to resolve the error, you may need to provide more information about your code and the specific error message you are receiving in order to receive more specific help.
+
+-------------------------------------------
+
+
+
+error: package org.springframework.boot.autoconfigure.condition
+The error "package org.springframework.boot.autoconfigure.condition" in Java usually occurs when the required Spring Boot dependency for the org.springframework.boot.autoconfigure.condition package is not added to the project's dependencies or is not imported properly.
+
+org.springframework.boot.autoconfigure.condition package provides conditional configuration for Spring Boot auto-configuration. It includes several annotations such as @ConditionalOnBean, @ConditionalOnMissingBean, @ConditionalOnClass, and others.
+
+To resolve this error, you can follow these steps:
+
+Make sure that the Spring Boot dependency is added to your project's dependencies. You can add the following dependency to your Maven or Gradle build file:
+Maven:
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>2.6.3</version>
+</dependency>
+
+
+Gradle:
+
+implementation 'org.springframework.boot:spring-boot-starter:2.6.3'
+Import the required class by adding the following import statement at the top of your Java class:
+
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+If you are still facing the error, try cleaning and rebuilding your project. If the error persists, make sure to check if the package name and the class name are spelled correctly.
+If you are still unable to resolve the error, you may need to provide more information about your code and the specific error message you are receiving in order to receive more specific help.
+
+
+
+
+-----------------------------------------------------------------------
+error: cannot find symbol
+The "cannot find symbol" error in Java usually occurs when the compiler cannot locate a symbol (such as a variable, method, or class) that is being used in the code.
+
+To resolve this error, you can follow these steps:
+
+Check the spelling of the symbol: Make sure that the spelling of the symbol is correct and that it is being referred to with the correct capitalization.
+
+Check the scope of the symbol: Make sure that the symbol is defined in the correct scope and is visible where it is being used. For example, if the symbol is a variable, make sure that it is defined within the same block of code or in an outer block of code.
+
+Check the import statements: If the symbol is a class or method from an external library or package, make sure that the appropriate import statement is included at the top of the Java file.
+
+Check the classpath: If the symbol is from an external library or package that is not part of the Java runtime environment, make sure that the library or package is in the classpath of the project.
+
+Check the compilation order: If the symbol is defined in another Java file that is compiled separately, make sure that the file is compiled before the file that is using the symbol.
+
+Check for typos or syntax errors: Make sure that there are no typos or syntax errors in the code that could be causing the symbol to be incorrectly referenced.
+
+By following these steps, you should be able to resolve the "cannot find symbol" error in your Java code.
+
+
+
+
